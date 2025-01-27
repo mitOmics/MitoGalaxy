@@ -5,7 +5,7 @@
 
 **MitoGalaxy** is a practical bioinformatics workbench, based on the Galaxy User Interface (UI), dedicated to the analysis of mitochondrial dataset. **MitoGalaxy** was developed as a Docker-based middleware layer, enabling easy deployment across different infrastructure models (including leading Infrastructure-as-a-Service (IaaS) systems) and providing a powerful Platform-as-a-Service (PaaS) environment for a variety of bioinformatics analyses.
 
-Moreover, **MitoGalaxy** can be further extended with the aid of the Galaxy Interactive Environment (GIE) framework, designed to combine Galaxy tools/workflows with environments like Jupyter, RStudio, Tripal, Apollo, JBrowser, among others. Its modular development makes **Myconids** easily scalable to thousands of data sets, but also allows users to run it on a single desktop, with fewer tools.
+Moreover, **MitoGalaxy** can be further extended with the aid of the Galaxy Interactive Environment (GIE) framework, designed to combine Galaxy tools/workflows with environments like Jupyter, RStudio, Tripal, Apollo, JBrowser, among others. Its modular development makes **MitoGalaxy** easily scalable to thousands of data sets, but also allows users to run it on a single desktop, with fewer tools.
 
 ---
 
