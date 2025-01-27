@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<toolbox>
+
+<!-- UPLOAD DATA -->
+
+
+<label id="get_data" text="GET DATA" />
+
+<section id="getext" name="Get Upload Data">
+    <tool file="data_source/upload.xml" />
+</section>
+
+<section id="getdb" name="Get Upload DB">
+</section>
+<section id="tools" name="Tools">
+</section>
+    
+<label id="ngs_tools" text="NGS TOOLS" />
+
+<section id="qc" name="NGS: QC and manipulation">
+</section>
+<section id="rna_assembly" name="NGS: RNA Assembly">
+</section>
+<section id="dna_assembly" name="NGS: DNA Assembly">
+</section>
+<section id="meta_assembly" name="NGS: Meta Assembly">
+</section>
+<section id="mapping" name="NGS: Mapping">
+</section>
+<section id="tuxedo" name="NGS: Tuxedo Suite">
+</section>
+<section id="rnaseq" name="NGS: RNA-Seq Analysis">
+</section>
+<section id="fusion" name="NGS: Fusion Analysis">
+</section>
+<section id="splice" name="NGS: Splicing Analysis">
+</section>
+<section id="methylation" name="NGS: Methylation Analysis">
+</section>
+<section id="chipseq" name="NGS: ChIP-Seq Analysis">
+</section>
+<section id="radseq" name="NGS: RAD-Seq Analysis">
+</section>
+<section id="srna" name="NGS: Small RNAs">
+</section>
+<section id="circrna" name="NGS: circRNAs">
+</section>
+<section id="lncrna" name="NGS: lncRNAs">
+</section>
+<section id="annot" name="NGS: Annotation">
+</section>
+<section id="rlang" name="NGS: R Packages">
+</section>
+<section id="infernal" name="NGS: Infernal Suite">
+</section>
+<section id="samtools" name="NGS: SAMtools">
+</section>
+<section id="bamtools" name="NGS: BAMtools">
+</section>
+<section id="bedtools" name="NGS: BEDtools">
+</section>
+<section id="bctools" name="NGS: BCtools">
+</section>
+<section id="deeptools" name="NGS: Deep Tools">
+</section>
+<section id="picard" name="NGS: Picard">
+</section>
+<section id="emboss" name="NGS: EMBOSS">
+</section>
+<section id="gatk" name="NGS: GATK Tools">
+</section>
+<section id="vcftools" name="NGS: VCFtools">
+</section>
+<section id="variant" name="NGS: SNP Calling">
+</section>
+<section id="repeat" name="NGS: Repeat Analysis">
+</section>
+<section id="nanopore" name="NGS: Nanopore">
+</section>
+<section id="single-cell" name="NGS: Single Cell">
+</section>
+
+
+<label id="label_similarity" text="SIMILARITY TOOLS" />
+
+<section id="blast" name="NCBI BLAST">
+</section>
+<section id="hmm" name="HMM Tools">
+</section>
+<section id="similarity" name="Alignment Tools">
+</section> 
+<section id="taxon" name="Phylogeny and Taxonomy">
+</section>
+
+<label id="label_microbiome" text="MICROBIOME E METAGENOME" />    
+
+<section id="qiime" name="QIIME Platform">
+</section>
+<section id="itsx" name="ITSx Tool">
+</section>
+<section id="lefse" name="Lefse Tool">
+</section>
+<section id="picrust" name="PicRust Tool">
+</section>
+<section id="biom" name="BIOM Manipulation">
+</section>
+<section id="clustering" name="Clustering Tools">
+</section>
+<section id="metaassembly" name="Metagenomics Assembly">
+</section>
+<section id="metagenomics_manipulation" name="Metagenomics Manipulation">
+</section>
+<section id="wgs_taxonomic_assignations" name="Taxonomic Assignations">
+</section>
+<section id="metabolism_assignation" name="Metabolism Assignations">
+</section>
+<section id="sorting_prediction" name="Sorting and Prediction">
+</section>
+<section id="visualization" name="Visualization Tools">
+</section>
+    
+    
+<label id="label_fasta_fastq" text="FASTA E FASTQ TOOLS" />    
+
+<section id="fasta_tools" name="FASTA Tools">
+</section>
+<section id="fastq" name="FASTQ Tools">
+</section>
+    
+<label id="label_ngs" text="MACHINE LEARNING" />
+    
+<section id="sklearn" name="Scikit Learn Tools">
+</section>
+<section id="keras" name="KERAS Tools">
+</section>
+
+<label id="label_common" text="COMMON TOOLS" />
+    
+<!-- COMMON TOOLS -->
+
+<section id="textutil" name="Text Manipulation">
+    <tool file="filters/fixedValueColumn.xml" />
+    <tool file="filters/catWrapper.xml" />
+    <tool file="filters/cutWrapper.xml" />
+    <tool file="filters/mergeCols.xml" />
+    <tool file="filters/convert_characters.xml" />
+    <tool file="filters/CreateInterval.xml" />
+    <tool file="filters/cutWrapper.xml" />
+    <tool file="filters/changeCase.xml" />
+    <tool file="filters/pasteWrapper.xml" />
+    <tool file="filters/remove_beginning.xml" />
+    <tool file="filters/randomlines.xml" />
+    <tool file="filters/headWrapper.xml" />
+    <tool file="filters/tailWrapper.xml" />
+    <tool file="filters/trimmer.xml" />
+    <tool file="filters/wc_gnu.xml" />
+    <tool file="filters/secure_hash_message_digest.xml" />
+</section>
+<section id="filter" name="Filter and Sort">
+    <tool file="stats/filtering.xml" />
+    <tool file="filters/sorter.xml" />
+    <tool file="filters/grep.xml" />
+</section>
+<section id="group" name="Join, Subtract and Group">
+    <tool file="filters/joiner.xml" />
+    <tool file="filters/compare.xml" />
+    <tool file="stats/grouping.xml" />
+</section>
+<section id="stats" name="Statistics">
+    <tool file="stats/gsummary.xml" />
+    <tool file="filters/uniq.xml" />
+    </section>
+<section id="plots" name="Graph/Display Data">
+    <tool file="plotting/bar_chart.xml" />
+    <tool file="plotting/boxplot.xml" />
+</section>    
+    
+</toolbox>
