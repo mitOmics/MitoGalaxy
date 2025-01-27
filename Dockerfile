@@ -12,12 +12,20 @@ ADD config/scripts/postinst.sh /bin/postinst
 RUN postinst
 
 COPY config/tools/tools_0.yaml $GALAXY_ROOT/tools_0.yaml
+COPY config/tools/tools_0.yaml $GALAXY_ROOT/tools_1.yaml
+COPY config/tools/tools_0.yaml $GALAXY_ROOT/tools_2.yaml
+COPY config/tools/tools_0.yaml $GALAXY_ROOT/tools_3.yaml
+COPY config/tools/tools_0.yaml $GALAXY_ROOT/tools_4.yaml
 
 ADD config/galaxy/tool_conf.xml $GALAXY_ROOT/config/
 ADD config/galaxy/dependency_resolvers_conf.xml $GALAXY_ROOT/config/
 
 RUN df -h \
     && install-tools $GALAXY_ROOT/tools_0.yaml \
+    && install-tools $GALAXY_ROOT/tools_1.yaml \
+    && install-tools $GALAXY_ROOT/tools_2.yaml \
+    && install-tools $GALAXY_ROOT/tools_3.yaml \
+    && install-tools $GALAXY_ROOT/tools_4.yaml \
     && /tool_deps/_conda/bin/conda clean --tarballs --yes > /dev/null \
     && rm /export/galaxy-central/ -rf \
     && df -h
