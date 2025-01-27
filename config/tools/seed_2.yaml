@@ -1,0 +1,61 @@
+# This is just a sample file. For a fully documented version of this file, see
+# https://github.com/galaxyproject/ansible-galaxy-tools/blob/master/files/tool_list.yaml.sample
+api_key: fakekey
+galaxy_instance: http://localhost:8080
+install_repository_dependencies: False
+install_resolver_dependencies: True
+install_tool_dependencies: True
+tools:
+
+########### QC
+- name: fastqc
+  owner: devteam
+  tool_panel_section_id: 'qc'
+
+- name: multiqc
+  owner: iuc
+  tool_panel_section_id: 'qc'
+  
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_id: 'qc'
+
+- name: scythe
+  owner: nikhil-joshi
+  tool_panel_section_id: 'qc'
+
+- name: sickle
+  owner: iuc
+  tool_panel_section_id: 'qc'
+  
+- name: pear
+  owner: iuc
+  tool_panel_section_id: 'qc'
+  
+- name: prinseq
+  owner: iuc
+  tool_panel_section_id: 'qc'
+  
+- name: cutadapt
+  owner: lparsons
+  tool_panel_section_id: 'qc'
+  
+- name: flexbar
+  owner: jtilman
+  tool_panel_section_id: 'qc'
+
+- name: fastx_clipper
+  owner: devteam
+  tool_panel_section_id: 'qc'
+  
+- name: trim_galore
+  owner: bgruening
+  tool_panel_section_id: 'qc'
+
+- name: fastp
+  owner: iuc
+  tool_panel_section_id: 'qc'
+
+#####################
+#####################
+#####################
