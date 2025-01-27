@@ -1,7 +1,7 @@
-FROM quay.io/bgruening/galaxy:20.05
+FROM quay.io/bgruening/galaxy:24.1
 MAINTAINER Fabiano Menegidio <fabiano.menegidio@bioinformatica.com.br>
 
-ENV GALAXY_CONFIG_BRAND="gNTDi"
+ENV GALAXY_CONFIG_BRAND="MitoGalaxy"
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True
 ENV GALAXY_CONFIG_CONDA_AUTO_INIT=True
 ENV ENABLE_TTS_INSTALL=True
@@ -11,7 +11,7 @@ ENV PYTHONWARNINGS="ignore:DEPRECATION"
 ADD config/scripts/postinst.sh /bin/postinst
 RUN postinst
 
-COPY config/tools/seed_0.yaml $GALAXY_ROOT/tools_0.yaml
+COPY config/tools/tools_0.yaml $GALAXY_ROOT/tools_0.yaml
 
 ADD config/galaxy/tool_conf.xml $GALAXY_ROOT/config/
 ADD config/galaxy/dependency_resolvers_conf.xml $GALAXY_ROOT/config/
