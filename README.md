@@ -124,7 +124,7 @@ From now on you should see predifined BLAST databases in your Galaxy User Interf
 
 ## Author <a name="Author" /> [[menu]](#menu)
 
-Current development by Fabiano Menegidio (<fabiano.menegidio@biology.com.br>), XXXXXXXX.
+Current development by Fabiano Menegidio (<fabianomenegidio@umc.br>), Rubens Pasa (<xxxxx.@xxxx.br>),  Karine F. Kavalco (<xxxxx.@xxxx.br>), Caroline Garcia (<xxxxx.@xxxx.br>),  Iuri (<xxxxx.@xxxx.br>), Igor (<xxxxx.@xxxx.br>), Renan (<xxxxx.@xxxx.br>), David Aciole Barbora (<xxxxx.@xxxx.br>).
 
 ## Contributing <a name="Contributing" /> [[menu]](#menu)
 
