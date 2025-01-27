@@ -1,0 +1,50 @@
+# This is just a sample file. For a fully documented version of this file, see
+# https://github.com/galaxyproject/ansible-galaxy-tools/blob/master/files/tool_list.yaml.sample
+#api_key: fakekey
+#api_key: admin
+galaxy_instance: http://localhost:8080
+install_repository_dependencies: False
+install_resolver_dependencies: True
+install_tool_dependencies: True
+tools:
+
+######### FASTA TOOLS
+- name: fasta_compute_length
+  owner: devteam
+  tool_panel_section_id: 'fasta_tools'
+
+- name: fasta_merge_files_and_filter_unique_sequences
+  owner: galaxyp
+  tool_panel_section_id: 'fasta_tools'
+
+- name: seq_filter_by_id
+  owner: peterjc
+  tool_panel_section_id: 'fasta_tools'
+
+- name: seq_rename
+  owner: peterjc
+  tool_panel_section_id: 'fasta_tools'
+
+- name: seq_select_by_id
+  owner: peterjc
+  tool_panel_section_id: 'fasta_tools'
+
+- name: get_orfs_or_cdss
+  owner: peterjc
+  tool_panel_section_id: 'fasta_tools'
+
+- name: fasta_formatter
+  owner: devteam
+  tool_panel_section_id: 'fasta_tools'
+
+- name: fasta_to_tabular
+  owner: devteam
+  tool_panel_section_id: 'fasta_tools'
+  
+- name: tabular_to_fasta
+  owner: devteam
+  tool_panel_section_id: 'fasta_tools'
+  
+- name: find_subsequences
+  owner: bgruening
+  tool_panel_section_id: 'fasta_tools'
